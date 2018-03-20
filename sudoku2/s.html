@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!--  <link rel="stylesheet" type="text/css" href="sudoku.css">
+  <script type="text/javascript" src="sudoku.js"></script>  -->
+
+  <title>sudoku</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Sudoku</h1>
+    <table id="t1">
+    <table id="t11">
+      <tr>
+        <td id="11" class="val fixed"></td>
+        <td id="12" class="val change"></td>
+        <td id="13" class="val fixed"></td> 
+        <td id="14" class="val fixed"></td>
+        <td id="15" class="val change"></td>
+        <td id="16" class="val fixed"></td>
+        <td id="17" class="val fixed"></td>
+        <td id="18" class="val change"></td>
+        <td id="19" class="val fixed"></td>
+      </tr>
+      </table>
+      <table id="t12">
+      <tr>
+        <td id="21" class="val fixed"></td>
+        <td id="22" class="val change"></td>
+        <td id="23" class="val fixed"></td> 
+        <td id="24" class="val fixed"></td>
+        <td id="25" class="val change"></td>
+        <td id="26" class="val fixed"></td>
+        <td id="27" class="val fixed"></td>
+        <td id="28" class="val change"></td>
+        <td id="29" class="val fixed"></td>
+      </tr>
+      </table>
+      <table id="t13">
+      <tr>
+        <td id="31" class="val fixed"></td>
+        <td id="32" class="val change"></td>
+        <td id="33" class="val fixed"></td> 
+        <td id="34" class="val fixed"></td>
+        <td id="35" class="val change"></td>
+        <td id="36" class="val fixed"></td>
+        <td id="37" class="val fixed"></td>
+        <td id="38" class="val change"></td>
+        <td id="39" class="val fixed"></td>
+      </tr>
+      </table>
+      <table id="t14">
+       <tr>
+        <td id="41" class="val fixed"></td>
+        <td id="42" class="val change"></td>
+        <td id="43" class="val fixed"></td> 
+        <td id="44" class="val fixed"></td>
+        <td id="45" class="val change"></td>
+        <td id="46" class="val fixed"></td>
+        <td id="47" class="val fixed"></td>
+        <td id="48" class="val change"></td>
+        <td id="49" class="val fixed"></td>
+      </tr>
+      </table>
+      <table id="t15">
+      <tr>
+        <td id="51" class="val fixed"></td>
+        <td id="52" class="val change"></td>
+        <td id="53" class="val fixed"></td> 
+        <td id="54" class="val fixed"></td>
+        <td id="55" class="val change"></td>
+        <td id="56" class="val fixed"></td>
+        <td id="57" class="val fixed"></td>
+        <td id="58" class="val change"></td>
+        <td id="59" class="val fixed"></td>
+      </tr>
+      </table>
+      <table id="t16">
+      <tr>
+        <td id="61" class="val fixed"></td>
+        <td id="62" class="val change"></td>
+        <td id="63" class="val fixed"></td> 
+        <td id="64" class="val fixed"></td>
+        <td id="65" class="val change"></td>
+        <td id="66" class="val fixed"></td>
+        <td id="67" class="val fixed"></td>
+        <td id="68" class="val change"></td>
+        <td id="69" class="val fixed"></td>
+      </tr>
+      </table>
+      <table id="t17">
+       <tr>
+        <td id="71" class="val fixed"></td>
+        <td id="72" class="val change"></td>
+        <td id="73" class="val fixed"></td> 
+        <td id="74" class="val fixed"></td>
+        <td id="75" class="val change"></td>
+        <td id="76" class="val fixed"></td>
+        <td id="77" class="val fixed"></td>
+        <td id="78" class="val change"></td>
+        <td id="79" class="val fixed"></td>
+      </tr>
+      </table>
+      <table id="t18">
+      <tr>
+        <td id="81" class="val fixed"></td>
+        <td id="82" class="val change"></td>
+        <td id="83" class="val fixed"></td> 
+        <td id="84" class="val fixed"></td>
+        <td id="85" class="val change"></td>
+        <td id="86" class="val fixed"></td>
+        <td id="87" class="val fixed"></td>
+        <td id="88" class="val change"></td>
+        <td id="89" class="val fixed"></td>
+      </tr>
+      </table>
+      <table id="t19">
+      <tr>
+        <td id="91" class="val fixed"></td>
+        <td id="92" class="val change"></td>
+        <td id="93" class="val fixed"></td> 
+        <td id="94" class="val fixed"></td>
+        <td id="95" class="val change"></td>
+        <td id="96" class="val fixed"></td>
+        <td id="97" class="val fixed"></td>
+        <td id="98" class="val change"></td>
+        <td id="99" class="val fixed"></td>
+      </tr>
+      </table>
+</table>
+    <br><br>
+    <div>
+      <button class="btn btn-default number" value="1">1</button>
+      <button class="btn btn-default number" value="2">2</button> 
+      <button class="btn btn-default number" value="3">3</button>
+      <button class="btn btn-default number" value="4">4</button>
+      <button class="btn btn-default number" value="5">5</button> 
+      <button class="btn btn-default number" value="6">6</button>
+      <button class="btn btn-default number" value="7">7</button>
+      <button class="btn btn-default number" value="8">8</button> 
+      <button class="btn btn-default number" value="9">9</button>
+    </div>
+     </div>
+</body>
+</html>

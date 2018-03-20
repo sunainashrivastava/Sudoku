@@ -1,7 +1,7 @@
 $(document).ready(function(){
   
   $("#btn").click(function(){
-    $("table tr").each(function (){
+    $("table tr").each(function (){ // shuffling rows
       var rows = $(this).find("th");
       rows.eq(8).after(rows.eq(7)).after(rows.eq(6)).after(rows.eq(5)).after(rows.eq(4)).after(rows.eq(3)).after(rows.eq(2)).after(rows.eq(1)).after(rows.eq(0));
     });  

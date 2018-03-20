@@ -75,44 +75,44 @@ $(document).ready(function()
 
      for(var k=0;k<81;k=(k+3) )
      { 
-        if((k%9==0)&&(k!=0))
-         {k=k+27;
-         }var count1=0;
+      if((k%9==0)&&(k!=0))
+       {k=k+27;
+       }var count1=0;
      for(var i=(k+0);i<(k+21);i++)   // for 3*3 squares comparision
        {  if((i%3==0)&&(i!=0)&&(k%3!=0)&&(k!=0))
          {i=i+6; 
          }
          var count2=0;
          for(var j=(i+1);j<(k+21);j++)
-          { 
-            
-            if(count2==9)
-              { break;}
-              count2++;   
-            if((j%3==0)&&(j!=0))
-             {j=j+6;
-             }
-             if(row[i]=="")
-               continue;
-             else if(row[j]=="")
-               continue;
-             else if(row[i]==row[j]==a)
-             { 
-              $(this).text("X"); 
-              var index= $(this).attr('id'); 
-              console.log(index);
-              var replaced_element=row.splice(index-1,1,'X');
-              console.log(replaced_element);   
-              break;  
-            }
-            else
-              continue;
+         { 
 
-          } count1++;
-          if(count1==9)
-            {break;}
-        }
+          if(count2==9)
+            { break;}
+          count2++;   
+          if((j%3==0)&&(j!=0))
+           {j=j+6;
+           }
+           if(row[i]=="")
+             continue;
+           else if(row[j]=="")
+             continue;
+           else if(row[i]==row[j]==a)
+           { 
+            $(this).text("X"); 
+            var index= $(this).attr('id'); 
+            console.log(index);
+            var replaced_element=row.splice(index-1,1,'X');
+            console.log(replaced_element);   
+            break;  
+          }
+          else
+            continue;
+
+        } count1++;
+        if(count1==9)
+          {break;}
       }
+    }
 
 // function squareNo(sq) {
 //   console.log(sq.className.split(' ')[3].substr(2));

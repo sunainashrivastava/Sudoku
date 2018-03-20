@@ -2,16 +2,28 @@
 table {
   border: 2px solid black;
   font-family: arial, sans-serif;
+  margin: auto;
+ }
+
+th {
+  border: 1px solid   #2F4F4F;
+  text-align:center;
+ padding: 10px; 
+
 }
 
-td, th,td {
-  border: 1px solid   #2F4F4F;
-  text-align: left;
-  padding: 15px;
-}
 .a{
-  background-color:  #dddddd;
+  background-color: #ebf0fa;
 } 
+
 .b{
-  background-color: #ffffff;
+  background-color: #c2d1f0;
+}
+
+body{
+ background-image: url("box.jpg"); 
+} 
+
+h1{
+color: #ffffff;
 }

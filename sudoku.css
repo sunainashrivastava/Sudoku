@@ -3,13 +3,14 @@ table {
   border: 2px solid black;
   font-family: arial, sans-serif;
   margin: auto;
+  width: 35%;
+  
  }
 
 th {
   border: 1px solid   #2F4F4F;
   text-align:center;
- padding: 10px; 
-
+ padding: 2%; 
 }
 
 .a{
